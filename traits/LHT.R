@@ -7,21 +7,11 @@ library(reshape2)
 # read in the data
 
 # read in amniote data with added rows
-amniote = read.csv("~/Dropbox/PhD/bird_rates/raw_data/Amniote_accepted_names.csv", stringsAsFactors = F)
+amniote = read.csv("path/to/Amniote_accepted_names.csv", stringsAsFactors = F)
 amniote[amniote == (-999)] = NA
-benoit = read.csv("~/Dropbox/PhD/bird_rates/raw_data/benoit.csv", stringsAsFactors = F)
-hbw = read.csv(file = "~/Dropbox/PhD/bird_rates/raw_data/HBW.csv", stringsAsFactors = F)
-#birdlife = read.csv("~/Dropbox/PhD/bird_rates/raw_data/old/birdlife2.csv", stringsAsFactors = F)
-species = read.csv("~/Dropbox/PhD/bird_rates/raw_data/taxon_names.csv", stringsAsFactors = F)
-
-amniote = amniote[,c(2,3,11:39)]
-benoit = benoit[,c(5:13)]
-hbw = hbw[,c(2,3,5:20)]
-#birdlife = birdlife[,c(2,5:10)]
-
-## For each trait preferentially choose amniote data, then Benoit's data, then HBW last
-## If values are missing in the final dataset look for them in HBW
-## Except for longevity, which is maximum recored (checking for massive outliers)
+benoit = read.csv("path/to/benoit.csv", stringsAsFactors = F)
+hbw = read.csv(file = "path/to/HBW.csv", stringsAsFactors = F)
+species = read.csv("path/to/taxon_names.csv", stringsAsFactors = F)
 
 ### MASS ###
 
