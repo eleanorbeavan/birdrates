@@ -6,13 +6,13 @@ library(caper)
 library(ggplot2)
 
 # load in data
-calibration.2 = read.csv("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/ages_mass_set_2.csv", stringsAsFactors = F)
-calibration.4 = read.csv("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/ages_mass_set_4.csv", stringsAsFactors = F)
-no.calibration = read.csv("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/ages_mass_no_cal.csv", stringsAsFactors = F)
+calibration.2 = read.csv("path/to/calibration.2.data", stringsAsFactors = F)
+calibration.4 = read.csv("path/to/calibration.4.data", stringsAsFactors = F)
+no.calibration = read.csv("path/to/no.calibration.data", stringsAsFactors = F)
 
-t2 = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_2.tre")
-t4 = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_4.tre")
-t = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/no_calibration.tre")
+t2 = read.tree("path/to/calibration_sets_2.tre")
+t4 = read.tree("path/to/calibration_sets_4.tre")
+t = read.tree("path/to/no_calibration.tre")
 
 # divide dS and dN by node age for each species in each sister pair
 abs.ds.2.sp1 = calibration.2$sp1_ds/calibration.2$node.age
@@ -52,10 +52,10 @@ dn.ds = c(dn.ds.sp1, dn.ds.sp2)
 species = c(calibration.2$spp1, calibration.2$spp2)
 
 # make a list of traits
-mass = c(calibration.2$mass_sp1, calibration.2$mass_sp2)
+trait = c(calibration.2$trait_sp1, calibration.2$trait_sp2) ## change this to whichever trait you are looking at
 
 # combine them into one dataframe
-pgls.data = data.frame(species, mass, abs.ds.2, abs.dn.2, abs.ds.4, abs.dn.4, abs.ds, abs.dn, dn.ds)
+pgls.data = data.frame(species, trait, abs.ds.2, abs.dn.2, abs.ds.4, abs.dn.4, abs.ds, abs.dn, dn.ds)
 
 # need to subset the tree to include only the tips in the data
 tips.to.drop = setdiff(t2$tip.label, species)
@@ -66,7 +66,7 @@ pgls.data.sorted = pgls.data[match(tree2$tip.label, pgls.data$species),]
 
 # dS vs mass pgls model calibration set 2
 pgls1 = comparative.data(tree2, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model1 = pgls(log(abs.ds.2) ~ log(mass), pgls1, lambda = 0.581, kappa = 'ML', delta = 0.370)
+model1 = pgls(log(abs.ds.2) ~ log(trait), pgls1, lambda = , kappa = , delta = ) ## fill in values of k, l and d
 summary(model1)
 
 # visualise the likelihood surfaces of lambda, kappa and delta
@@ -81,11 +81,11 @@ par(mfrow=c(2,2))
 plot(model1, which=c(1:6))
 
 # visualise the data
-ggplot(pgls.data, aes(log(mass), log(abs.ds.2))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-7.5, 0)) + geom_smooth(method = "lm", se = F) + xlab("log mass") + ylab("log dS (calibration set 2)") + theme_minimal()
+ggplot(pgls.data, aes(log(trait), log(abs.ds.2))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-7.5, 0)) + geom_smooth(method = "lm", se = F) + xlab("log trait") + ylab("log dS (calibration set 2)") + theme_minimal()
 
 # dN vs mass pgls model calibration set 2
 pgls1b = comparative.data(tree2, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model1b = pgls(log(abs.dn.2) ~ log(mass), pgls1b, lambda = 0.678, delta = 'ML', kappa = 0.432)
+model1b = pgls(log(abs.dn.2) ~ log(trait), pgls1b, lambda = , delta = , kappa = ) ## fill in values of k, l and d
 summary(model1b)
 
 # visualise the likelihood surfaces of lambda, kappa and delta
@@ -99,7 +99,7 @@ par(mfrow=c(2,2))
 plot(model1, which=c(1:6))
 
 # visualise the data
-ggplot(pgls.data, aes(log(mass), log(abs.dn.2))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-10, -5)) + geom_smooth(method = "lm", se = F) + xlab("log mass") + ylab("log dN (calibration set 2)") + theme_minimal()
+ggplot(pgls.data, aes(log(trait), log(abs.dn.2))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-10, -5)) + geom_smooth(method = "lm", se = F) + xlab("log trait") + ylab("log dN (calibration set 2)") + theme_minimal()
 
 #############
 # need to subset the tree to include only the tips in the data
@@ -111,7 +111,7 @@ pgls.data.sorted = pgls.data[match(tree4$tip.label, pgls.data$species),]
 
 # dS vs mass pgls model calibration set 4
 pgls2 = comparative.data(tree4, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model2 = pgls(log(abs.ds.4) ~ log(mass), pgls2, lambda = 0.701, kappa = 'ML', delta = 0.495)
+model2 = pgls(log(abs.ds.4) ~ log(trait), pgls2, lambda = , kappa = , delta = )
 summary(model2)
 
 # visualise the likelihood surfaces of lambda, kappa and delta
@@ -125,11 +125,11 @@ par(mfrow=c(2,2))
 plot(model2, which=c(1:6))
 
 # visualise the data
-ggplot(pgls.data, aes(log(mass), log(abs.ds.4))) + geom_point() + xlab("log mass") + ylab("log dS (calibration set 4)") + theme_minimal()
+ggplot(pgls.data, aes(log(trait), log(abs.ds.4))) + geom_point() + xlab("log trait") + ylab("log dS (calibration set 4)") + theme_minimal()
 
 # dN vs mass pgls model calibration set 4
 pgls2b = comparative.data(tree4, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model2b = pgls(log(abs.dn.4) ~ log(mass), pgls2, lambda = 0.737, kappa = 0.449, delta = 'ML')
+model2b = pgls(log(abs.dn.4) ~ log(trait), pgls2, lambda = , kappa = , delta = )
 summary(model2b)
 
 # visualise the likelihood surfaces of lambda, kappa and delta
@@ -143,7 +143,7 @@ par(mfrow=c(2,2))
 plot(model2, which=c(1:6))
 
 # visualise the data
-ggplot(pgls.data, aes(log(mass), log(abs.dn.4))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-10, -5)) + xlab("log mass") + ylab("log dN (calibration set 4)") + theme_minimal()
+ggplot(pgls.data, aes(log(trait), log(abs.dn.4))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-10, -5)) + xlab("log trait") + ylab("log dN (calibration set 4)") + theme_minimal()
 
 ########
 # need to subset the tree to include only the tips in the data
@@ -155,7 +155,7 @@ pgls.data.sorted = pgls.data[match(tree$tip.label, pgls.data$species),]
 
 # dS vs mass pgls model calibration set 4
 pgls3 = comparative.data(tree, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model3 = pgls(log(abs.ds) ~ log(mass), pgls3, lambda = 0.675, kappa = 'ML', delta = 0.412)
+model3 = pgls(log(abs.ds) ~ log(trait), pgls3, lambda = , kappa = , delta = )
 summary(model3)
 
 # visualise the likelihood surfaces of lambda, kappa and delta
@@ -170,11 +170,11 @@ par(mfrow=c(2,2))
 plot(model3, which=c(1:6))
 
 # visualise the data
-ggplot(pgls.data, aes(log(mass), log(abs.ds))) + geom_point() + xlab("log mass") + ylab("log dS (no calibration)") + theme_minimal()
+ggplot(pgls.data, aes(log(trait), log(abs.ds))) + geom_point() + xlab("log trait") + ylab("log dS (no calibration)") + theme_minimal()
 
 # dN vs mass pgls model calibration set 4
 pgls3b = comparative.data(tree, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model3b = pgls(log(abs.dn) ~ log(mass), pgls3b, lambda = 0.828, kappa = 'ML', delta = 0.584)
+model3b = pgls(log(abs.dn) ~ log(trait), pgls3b, lambda = , kappa = , delta = )
 summary(model3b)
 
 # visualise the likelihood surfaces of lambda, kappa and delta
@@ -188,12 +188,12 @@ par(mfrow=c(2,2))
 plot(model3b, which=c(1:6))
 
 # visualise the data
-ggplot(pgls.data, aes(log(mass), log(abs.dn))) + geom_point() + xlab("log mass") + ylab("log dN (no calibration)") + theme_minimal()
+ggplot(pgls.data, aes(log(trait), log(abs.dn))) + geom_point() + xlab("log trait") + ylab("log dN (no calibration)") + theme_minimal()
 
 ## DN/DS
 # dN/dS vs mass pgls model 
 pgls4 = comparative.data(tree2, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model4 = pgls(log(dn.ds) ~ log(mass), pgls4, lambda = 0.456, kappa = 0.697, delta = 'ML')
+model4 = pgls(log(dn.ds) ~ log(trait), pgls4, lambda = , kappa = , delta = )
 summary(model4)
 
 # visualise the likelihood surfaces of lambda, kappa and delta
@@ -208,198 +208,4 @@ par(mfrow=c(2,2))
 plot(model4, which=c(1:6))
 
 # visualise the data
-ggplot(pgls.data, aes(log(mass), log(dn.ds))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-7.5, 0)) + geom_smooth(method = "lm", se = F) + xlab("log mass") + ylab("log dN/dS (calibration set 2)") + theme_minimal()
-
-## if it's the branch lengths transformations that are making the trend significant
-# I should be able to set them to 1 and get the PIC results?
-model4 = pgls(log(abs.ds.2) ~ log(mass), pgls1, lambda = 1, kappa = 1, delta = 1)
-summary(model4)
-
-par(mfrow=c(1,3))
-mod.l = pgls.profile(model4, 'lambda')
-mod.k = pgls.profile(model4, 'kappa')
-mod.d = pgls.profile(model4, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-model4b = pgls(log(abs.dn.2) ~ log(mass), pgls1b, lambda = 1, kappa = 1, delta = 1)
-summary(model4b)
-
-mod.l = pgls.profile(model4b, 'lambda')
-mod.k = pgls.profile(model4b, 'kappa')
-mod.d = pgls.profile(model4b, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-model5 = pgls(log(abs.ds.4) ~ log(mass), pgls2, lambda = 1, kappa = 1, delta = 1)
-summary(model5)
-
-mod.l = pgls.profile(model5, 'lambda')
-mod.k = pgls.profile(model5, 'kappa')
-mod.d = pgls.profile(model5, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-model5b = pgls(log(abs.dn.4) ~ log(mass), pgls2b, lambda = 1, kappa = 1, delta = 1)
-summary(model5b)
-
-mod.l = pgls.profile(model5b, 'lambda')
-mod.k = pgls.profile(model5b, 'kappa')
-mod.d = pgls.profile(model5b, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-model6 = pgls(log(abs.ds) ~ log(mass), pgls3, lambda = 1, kappa = 1, delta = 1)
-summary(model6)
-
-mod.l = pgls.profile(model6, 'lambda')
-mod.k = pgls.profile(model6, 'kappa')
-mod.d = pgls.profile(model6, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-model6b = pgls(log(abs.dn) ~ log(mass), pgls3b, lambda = 1, kappa = 1, delta = 1)
-summary(model6b)
-
-mod.l = pgls.profile(model6b, 'lambda')
-mod.k = pgls.profile(model6b, 'kappa')
-mod.d = pgls.profile(model6b, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-
-## Order analysis 
-pgls.data = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order_mass.csv", stringsAsFactors = F)
-pgls.data$Order = as.factor(as.character(pgls.data$Order))
-
-# rows in dataframe need to be in the same order as tips in the tree
-pgls.data.sorted = pgls.data[match(tree2$tip.label, pgls.data$species),]
-
-# dS vs mass
-pgls4 = comparative.data(tree2, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model7 = pgls(log(abs.ds.2) ~ log(mass) + Order, pgls4, lambda = 'ML', kappa = 0.0001, delta = 0.865)
-summary(model7)
-
-# visualise the likelihood surfaces of lambda, kappa and delta
-par(mfrow=c(1,3))
-mod.l = pgls.profile(model7, 'lambda')
-mod.k = pgls.profile(model7, 'kappa')
-mod.d = pgls.profile(model7, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-# visualise the model
-par(mfrow=c(2,2))
-plot(model7, which=c(1:6))
-
-# dN vs mass
-model7b = pgls(log(abs.dn.2) ~ log(mass) + Order, pgls4, lambda = 0.0001, kappa = 'ML', delta = 1.275)
-summary(model7b)
-
-# visualise the likelihood surfaces of lambda, kappa and delta
-par(mfrow=c(1,3))
-mod.l = pgls.profile(model7b, 'lambda')
-mod.k = pgls.profile(model7b, 'kappa')
-mod.d = pgls.profile(model7b, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-# visualise the model
-par(mfrow=c(2,2))
-plot(model7, which=c(1:6))
-
-# SET 4 
-# dS vs mass
-pgls5 = comparative.data(tree4, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model8 = pgls(log(abs.ds.4) ~ log(mass) + Order, pgls5, lambda = 0.0001, kappa = 0.0001, delta = 'ML')
-summary(model8)
-
-# visualise the likelihood surfaces of lambda, kappa and delta
-par(mfrow=c(1,3))
-mod.l = pgls.profile(model8, 'lambda')
-mod.k = pgls.profile(model8, 'kappa')
-mod.d = pgls.profile(model8, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-# visualise the model
-par(mfrow=c(2,2))
-plot(model8, which=c(1:6))
-
-# dN vs mass
-model8b = pgls(log(abs.dn.4) ~ log(mass) + Order, pgls5, lambda = 0.0001, kappa = 0.733, delta = 'ML')
-summary(model8b)
-
-# visualise the likelihood surfaces of lambda, kappa and delta
-par(mfrow=c(1,3))
-mod.l = pgls.profile(model8b, 'lambda')
-mod.k = pgls.profile(model8b, 'kappa')
-mod.d = pgls.profile(model8b, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-# visualise the model
-par(mfrow=c(2,2))
-plot(model8b, which=c(1:6))
-
-## NO CAL
-# dS vs mass
-pgls6 = comparative.data(tree, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
-model9 = pgls(log(abs.ds) ~ log(mass) + Order, pgls6, lambda = 0.0001, kappa = 0.0001, delta = 'ML')
-summary(model9)
-
-# visualise the likelihood surfaces of lambda, kappa and delta
-par(mfrow=c(1,3))
-mod.l = pgls.profile(model9, 'lambda')
-mod.k = pgls.profile(model9, 'kappa')
-mod.d = pgls.profile(model9, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-# visualise the model
-par(mfrow=c(2,2))
-plot(model9, which=c(1:6))
-
-# dN vs mass
-model9b = pgls(log(abs.dn) ~ log(mass) + Order, pgls6, lambda = 0.0001, kappa = 0.464, delta = 'ML')
-summary(model9b)
-
-# visualise the likelihood surfaces of lambda, kappa and delta
-par(mfrow=c(1,3))
-mod.l = pgls.profile(model9b, 'lambda')
-mod.k = pgls.profile(model9b, 'kappa')
-mod.d = pgls.profile(model9b, 'delta')
-plot(mod.l); plot(mod.k); plot(mod.d)
-
-# visualise the model
-par(mfrow=c(2,2))
-plot(model9b, which=c(1:6))
-
-# dS set 2
-## to check which models better fit the data:
-AIC(model1, model7)
-# dN set 2
-# the lower the better so model 7 - with order - is better
-AIC(model1b, model7b)
-# model 7b is lower - with order for dN
-
-# dS set 4
-AIC(model2, model8)
-# model 8 is  better
-# dN set 4
-AIC(model2b, model8b)
-# model 8b is better
-
-# dS no cal
-AIC(model3, model9)
-# model 9 is better
-# dN no cal
-AIC(model3b, model9b)
-# model 9b is better
-
-# The order analysis is consistently better, suggesting order explains something that the other traits don't
-
-# use melt and ggplot to plot all 3 calibration sets on one plot
-library(reshape2)
-library(viridis)
-
-# dS
-ds.data = pgls.data[,c(1,2,3,5,7)]
-plot.ds.data = melt(ds.data, id.vars = c('species', 'mass'), measure.vars = c('abs.ds.2', 'abs.ds.4', 'abs.ds'))
-
-p3 = ggplot(plot.ds.data, aes(log(mass), log(value), colour = variable)) + geom_point(size = 1) + xlab("log mass") + ylab("log dS") + stat_smooth(method = 'lm', se = F, size = 0.5) + theme_minimal() + theme(legend.position = "none")
-p3 
-
-dn.data = pgls.data[,c(1,2,4,6,8)]
-plot.dn.data = melt(dn.data, id.vars = c('species', 'mass'), measure.vars = c('abs.dn.2', 'abs.dn.4', 'abs.dn'))
-
-p4 = ggplot(plot.dn.data, aes(log(mass), log(value), colour = variable)) + geom_point(size = 1) + xlab("log mass") + ylab("log dN") + stat_smooth(method = 'lm', se = F, size = 0.5) + theme_minimal() + theme(legend.position = "none")
+ggplot(pgls.data, aes(log(trait), log(dn.ds))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-7.5, 0)) + geom_smooth(method = "lm", se = F) + xlab("log trait") + ylab("log dN/dS") + theme_minimal()
