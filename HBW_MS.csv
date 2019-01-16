@@ -1,0 +1,455 @@
+species,matched_name,order,longevity_maxrecorded,clutchsize_min,clutchsize_max,clutchsize_mean.usual,X.maxsuccesful._clutches_per_year,firstbreeding_minmonths,firstbreeding_maxmonths,firstbreeding_meanmonths
+Accipiter gentilis,Accipiter gentilis,Accipitriformes,19,1,5,NA,1,12,36,NA
+Accipiter nisus,Accipiter nisus,Accipitriformes,15,1,7,NA,NA,12,36,NA
+Accipiter soloensis,Accipiter soloensis,Accipitriformes,NA,2,5,NA,NA,NA,NA,NA
+Accipiter virgatus,Accipiter virgatus,Accipitriformes,NA,2,5,NA,NA,NA,NA,NA
+Acridotheres cristatellus,Acridotheres cristatellus,Passeriformes,NA,4,7,4,2,NA,NA,NA
+Acridotheres tristis,Acridotheres tristis,Passeriformes,NA,4,5,NA,3,NA,NA,NA
+Acryllium vulturinum,Acryllium vulturinum,Galliformes,NA,4,15,NA,NA,NA,NA,NA
+Aegithalos bonvaloti,Aegithalos bonvaloti,Passeriformes,NA,4,5,NA,NA,NA,NA,NA
+Aegithalos caudatus,Aegithalos caudatus,Passeriformes,NA,6,15,NA,1,NA,NA,NA
+Aegithalos concinnus,Aegithalos concinnus,Passeriformes,NA,3,8,NA,1,NA,NA,NA
+Aegithalos fuliginosus,Aegithalos fuliginosus,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Aegypius monachus,Aegypius monachus,Accipitriformes,39,NA,2,1,NA,NA,NA,NA
+Agapornis roseicollis,Agapornis roseicollis,Psittaciformes,NA,4,6,NA,NA,NA,NA,NA
+Molothrus badius,Agelaioides badius,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chrysomus cyanopus,Agelasticus cyanopus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chrysomus xanthophthalmus,Agelasticus xanthophthalmus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Aix galericulata,Aix galericulata,Anseriformes,15,7,14,NA,NA,NA,NA,NA
+Hemignathus stejnegeri,Akialoa stejnegeri,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Alauda arvensis,Alauda arvensis,Alauda arvensis,10,1,7,NA,5,NA,NA,12
+Amaurornis phoenicurus,Amaurornis phoenicurus,Gruiformes,NA,4,9,NA,NA,NA,NA,NA
+Amazilia versicolor,Amazilia versicolor,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Amazona barbadensis,Amazona barbadensis,Psittaciformes,NA,1,6,NA,NA,NA,NA,NA
+Amblyramphus holosericeus,Amblyramphus holosericeus,Passeriformes,NA,3,4,NA,NA,NA,NA,NA
+Anas platyrhynchos,Anas platyrhynchos,Anseriformes,29,4,18,NA,1,6,NA,12
+Anas poecilorhyncha,Anas poecilorhyncha,Anseriformes,NA,6,12,NA,NA,NA,NA,NA
+Anhinga rufa,Anhinga rufa,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anser cygnoides,Anser cygnoides,Anseriformes,NA,4,8,NA,NA,24,36,NA
+Anser indicus,Anser indicus,Anseriformes,NA,3,8,NA,NA,NA,36,NA
+Pterodroma brevirostris,Aphrodroma brevirostris,Procellariiformes,NA,NA,NA,1,NA,NA,NA,NA
+Apteryx haastii,Apteryx haastii,Apterygiformes,NA,1,2,NA,NA,NA,NA,NA
+Apteryx owenii,Apteryx owenii,Apterygiformes,83,NA,2,1,1,24,36,NA
+Ara glaucogularis,Ara glaucogularis,Psittaciformes,NA,2,3,NA,NA,NA,NA,NA
+Arborophila ardens,Arborophila ardens,Galliformes,NA,NA,NA,NA,NA,NA,NA,NA
+Arborophila brunneopectus,Arborophila brunneopectus,Galliformes,NA,NA,NA,4,NA,NA,NA,NA
+Arborophila gingica,Arborophila gingica,Galliformes,NA,5,7,NA,NA,NA,NA,NA
+Arborophila rufogularis,Arborophila rufogularis,Galliformes,NA,4,8,NA,NA,NA,NA,NA
+Archilochus colubris,Archilochus colubris,Apodiformes,NA,NA,NA,2,NA,NA,NA,NA
+Ardea modesta,Ardea alba,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ardea cinerea,Ardea cinerea,Pelecaniformes,NA,1,10,NA,1,NA,NA,NA
+Ardea purpurea,Ardea purpurea,Pelecaniformes,23,2,8,NA,2,NA,NA,NA
+Ardeola bacchus,Ardeola bacchus,Pelecaniformes,NA,2,8,NA,2,NA,NA,NA
+Arenaria interpres,Arenaria interpres,Charadriiformes,19,2,4,4,NA,NA,NA,24
+Athene brama,Athene brama,Strigiformes,NA,2,5,NA,NA,NA,NA,NA
+Attagis gayi,Attagis gayi,Charadriiformes,NA,NA,NA,4,NA,NA,NA,NA
+Aythya americana,Aythya americana,Anseriformes,21,7,14,9,1,65,NA,NA
+Aythya ferina,Aythya ferina,Anseriformes,22,8,15,NA,1,NA,24,12
+Balaeniceps rex,Balaeniceps rex,Pelecaniformes,50,1,3,2,NA,36,48,NA
+Balearica pavonina,Balearica pavonina,Gruiformes,NA,2,3,NA,NA,NA,NA,NA
+Balearica regulorum,Balearica regulorum,Gruiformes,NA,1,4,NA,NA,24,NA,36
+Bambusicola fytchii,Bambusicola fytchii,Galliformes,NA,3,8,NA,NA,NA,NA,NA
+Bambusicola thoracica,Bambusicola thoracicus,Galliformes,NA,3,7,NA,NA,NA,NA,NA
+Bombycilla cedrorum,Bombycilla cedrorum,Passeriformes,NA,2,6,NA,NA,NA,NA,NA
+Brotogeris cyanoptera,Brotogeris cyanoptera,Psittaciformes,NA,NA,NA,5,NA,NA,NA,NA
+Buteo burmanicus,Buteo burmanicus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Buteo buteo,Buteo buteo,Accipitriformes,25,1,5,NA,NA,12,NA,36
+Butorides striata,Butorides striata,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cacatua moluccensis,Cacatua moluccensis,Psittaciformes,NA,1,3,2,NA,48,60,NA
+Cacatua pastinator,Cacatua pastinator,Psittaciformes,NA,1,4,NA,NA,NA,NA,NA
+Cairina moschata,Cairina moschata,Anseriformes,NA,8,15,NA,NA,NA,NA,12
+Calyptorhynchus baudinii,Calyptorhynchus baudinii,Psittaciformes,NA,NA,NA,2,NA,NA,NA,NA
+Calyptorhynchus latirostris,Calyptorhynchus latirostris,Psittaciformes,19,1,2,NA,NA,48,NA,NA
+Campylorhynchus zonatus,Campylorhynchus zonatus,Passeriformes,NA,3,5,NA,2,NA,NA,NA
+Cardinalis cardinalis,Cardinalis cardinalis,Passeriformes,NA,1,5,NA,4,NA,NA,NA
+Carpodacus roseus,Carpodacus roseus,Passeriformes,NA,4,5,NA,2,NA,NA,NA
+Uragus sibiricus,Carpodacus sibiricus,Passeriformes,NA,3,6,NA,1,NA,NA,NA
+Casuarius bennetti,Casuarius bennetti,Casuariiformes,NA,3,5,NA,NA,NA,NA,NA
+Casuarius casuarius,Casuarius casuarius,Casuariiformes,NA,3,8,NA,NA,NA,NA,NA
+Cathartes aura,Cathartes aura,Cathartiformes,NA,NA,NA,2,NA,NA,NA,NA
+Cecropis daurica,Cecropis daurica,Passeriformes,8,2,7,NA,3,NA,NA,NA
+Chalcophaps indica,Chalcophaps indica,Chalcophaps indica,NA,NA,NA,2,NA,NA,NA,NA
+Chionis minor,Chionis minor,Charadriiformes,NA,1,4,NA,NA,36,60,NA
+Carduelis sinica,Chloris sinica,Passeriformes,NA,3,5,NA,2,NA,NA,NA
+Hemignathus flavus,Chlorodrepanis flava,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hemignathus virens,Chlorodrepanis virens,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chlorophanes spiza,Chlorophanes spiza,Passeriformes,NA,NA,NA,2,NA,NA,NA,NA
+Larus brunnicephalus,Chroicocephalus brunnicephalus,Charadriiformes,NA,1,4,3,NA,NA,NA,NA
+Chroicocephalus ridibundus,Chroicocephalus ridibundus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Chrysolophus amherstiae,Chrysolophus amherstiae,Galliformes,NA,NA,7,NA,NA,NA,NA,NA
+Chrysomus icterocephalus,Chrysomus icterocephalus,Passeriformes,NA,2,4,NA,NA,NA,NA,NA
+Chrysomus ruficapillus,Chrysomus ruficapillus,Passeriformes,NA,3,4,NA,NA,NA,NA,NA
+Ciconia boyciana,Ciconia boyciana,Ciconiiformes,48,2,6,NA,NA,NA,NA,NA
+Ciconia ciconia,Ciconia ciconia,Ciconiiformes,35,1,7,4,1,24,84,48
+Cnemotriccus fuscatus,Cnemotriccus fuscatus,Passeriformes,NA,NA,NA,3,NA,NA,NA,NA
+Coccothraustes coccothraustes,Coccothraustes coccothraustes,Passeriformes,NA,3,5,NA,1,NA,NA,12
+Colinus virginianus,Colinus virginianus,Galliformes,NA,10,15,NA,2,NA,NA,NA
+Columba janthina,Columba janthina,Columbiformes,NA,NA,NA,1,NA,NA,NA,NA
+Columba livia,Columba livia,Columbiformes,NA,NA,NA,2,5,6,NA,12
+Corvus brachyrhynchos,Corvus brachyrhynchos,Passeriformes,59,2,7,NA,NA,NA,NA,NA
+Corvus cornix,Corvus cornix,Passeriformes,NA,4,5,NA,1,24,36,NA
+Corvus frugilegus,Corvus frugilegus,Passeriformes,NA,2,7,4,1,12,NA,24
+Corvus hawaiiensis,Corvus hawaiiensis,Passeriformes,25,1,5,3,NA,NA,NA,NA
+Corvus macrorhynchos,Corvus macrorhynchos,Passeriformes,NA,3,6,4,NA,NA,NA,NA
+Corvus splendens,Corvus splendens,Passeriformes,NA,NA,NA,4,2,NA,NA,NA
+Coturnix japonica,Coturnix japonica,Galliformes,NA,5,13,NA,2,NA,NA,NA
+Crax daubentoni,Crax daubentoni,Galliformes,NA,NA,NA,2,NA,NA,NA,NA
+Crax rubra,Crax rubra,Galliformes,24,NA,NA,NA,NA,NA,NA,NA
+Serinus albogularis,Crithagra albogularis,Passeriformes,NA,2,4,NA,NA,NA,NA,NA
+Serinus dorsostriatus,Crithagra dorsostriatus,Passeriformes,NA,1,4,NA,NA,NA,NA,NA
+Crossoptilon auritum,Crossoptilon auritum,Galliformes,NA,6,12,8,NA,NA,NA,NA
+Crossoptilon crossoptilon,Crossoptilon crossoptilon,Galliformes,NA,4,7,NA,NA,NA,NA,NA
+Crossoptilon harmani,Crossoptilon harmani,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Crossoptilon mantchuricum,Crossoptilon mantchuricum,Galliformes,NA,4,14,NA,NA,NA,NA,NA
+Crotophaga ani,Crotophaga ani,Cuculiformes,NA,4,20,NA,NA,NA,NA,NA
+Crypturellus tataupa,Crypturellus tataupa,Tinamiformes,NA,4,5,NA,NA,NA,NA,NA
+Curaeus curaeus,Curaeus curaeus,Passeriformes,NA,3,6,NA,NA,NA,NA,NA
+Cyanopica cyanus,Cyanopica cyanus,Passeriformes,NA,5,8,NA,NA,NA,NA,NA
+Cygnus atratus,Cygnus atratus,Anseriformes,NA,1,14,NA,4,18,36,NA
+Cygnus columbianus,Cygnus columbianus,Anseriformes,21,1,6,NA,1,24,72,NA
+Cygnus olor,Cygnus olor,Anseriformes,27,1,12,NA,2,36,48,NA
+Vestiaria coccinea,Drepanis coccinea,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dryocopus pileatus,Dryocopus pileatus,Piciformes,9,1,6,NA,NA,NA,NA,12
+Egretta eulophotes,Egretta eulophotes,Pelecaniformes,NA,2,5,3,NA,NA,NA,NA
+Egretta sacra,Egretta sacra,Pelecaniformes,NA,2,6,NA,NA,NA,NA,NA
+Emberiza aureola,Emberiza aureola,Passeriformes,NA,3,7,NA,2,NA,NA,NA
+Emberiza chrysophrys,Emberiza chrysophrys,Passeriformes,NA,3,5,NA,NA,NA,NA,NA
+Emberiza pusilla,Emberiza pusilla,Passeriformes,NA,4,6,NA,1,NA,NA,NA
+Emberiza rustica,Emberiza rustica,Passeriformes,NA,4,6,NA,2,NA,NA,NA
+Emberiza rutila,Emberiza rutila,Passeriformes,NA,NA,NA,4,NA,NA,NA,NA
+Emberiza tristrami,Emberiza tristrami,Passeriformes,NA,4,5,NA,2,NA,NA,NA
+Eopsaltria australis,Eopsaltria australis,Passeriformes,12,1,4,2,3,NA,NA,NA
+Epthianura albifrons,Epthianura albifrons,Passeriformes,NA,2,5,3,NA,NA,NA,NA
+Eudromia elegans,Eudromia elegans,Tinamiformes,NA,5,9,NA,1,NA,NA,NA
+Eudyptula minor,Eudyptula minor,Sphenisciformes,25,1,2,NA,1,24,48,NA
+Eulabeornis castaneoventris,Eulabeornis castaneoventris,Gruiformes,NA,4,5,NA,NA,NA,NA,NA
+Euphagus cyanocephalus,Euphagus cyanocephalus,Passeriformes,NA,3,7,NA,2,NA,NA,NA
+Coturnix chinensis,Excalfactoria chinensis,Galliformes,NA,4,9,NA,2,NA,NA,36
+Falco cherrug,Falco cherrug,Falconiformes,NA,2,6,NA,NA,12,36,NA
+Falco peregrinus,Falco peregrinus,Falconiformes,NA,NA,NA,NA,1,12,NA,NA
+Ficedula albicollis,Ficedula albicollis,Passeriformes,7,1,9,NA,1,NA,NA,12
+Ficedula zanthopygia,Ficedula zanthopygia,Passeriformes,NA,4,8,NA,NA,NA,NA,NA
+Fratercula arctica,Fratercula arctica,Charadriiformes,NA,NA,NA,1,1,36,NA,60
+Fringilla coelebs,Fringilla coelebs,Passeriformes,14,4,6,NA,2,NA,NA,12
+Fulica atra,Fulica atra,Gruiformes,NA,1,14,NA,2,NA,NA,12
+Gallicolumba luzonica,Gallicolumba luzonica,Columbiformes,NA,NA,NA,2,NA,NA,NA,NA
+Gallinula chloropus,Gallinula chloropus,Gruiformes,NA,2,17,NA,NA,NA,NA,12
+Gallirallus australis,Gallirallus australis,Gruiformes,NA,1,6,NA,4,NA,NA,12
+Gallirallus okinawae,Gallirallus okinawae,Gruiformes,NA,2,3,NA,NA,NA,NA,NA
+Gallirallus philippensis,Gallirallus philippensis,Gruiformes,NA,2,8,NA,5,NA,NA,12
+Gallus gallus,Gallus gallus,Galliformes,NA,4,12,NA,NA,5,8,NA
+Garrulax cineraceus,Garrulax cineraceus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Garrulax perspicillatus,Garrulax perspicillatus,Passeriformes,NA,2,5,NA,NA,NA,NA,NA
+Gavia pacifica,Gavia pacifica,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gavia stellata,Gavia stellata,Gaviiformes,23,1,3,2,NA,24,36,NA
+Geococcyx californianus,Geococcyx californianus,Cuculiformes,NA,2,6,NA,3,NA,NA,NA
+Geopelia striata,Geopelia striata,Columbiformes,NA,NA,NA,2,NA,NA,NA,NA
+Geospiza fortis,Geospiza fortis,Passeriformes,NA,NA,NA,4,NA,NA,NA,NA
+Grus antigone,Grus antigone,Gruiformes,NA,2,3,NA,NA,24,36,NA
+Grus monacha,Grus monacha,Gruiformes,NA,NA,NA,2,NA,36,48,NA
+Grus nigricollis,Grus nigricollis,Gruiformes,NA,NA,NA,2,NA,NA,NA,NA
+Grus paradisea,Grus paradisea,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Grus rubicunda,Grus rubicunda,Gruiformes,NA,NA,NA,2,NA,36,60,NA
+Grus virgo,Grus virgo,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Gymnomystax mexicanus,Gymnomystax mexicanus,Passeriformes,NA,NA,NA,3,NA,NA,NA,NA
+Haematopus ater,Haematopus ater,Charadriiformes,NA,1,2,2,NA,NA,NA,NA
+Carpodacus cassinii,Haemorhous cassinii,Passeriformes,6,3,6,NA,1,NA,NA,NA
+Carpodacus mexicanus,Haemorhous mexicanus,Passeriformes,11,4,6,NA,3,NA,NA,12
+Halcyon pileata,Halcyon pileata,Coraciiformes,8,4,5,NA,1,NA,NA,NA
+Hemignathus wilsoni,Hemignathus wilsoni,Passeriformes,NA,1,3,1,NA,NA,NA,NA
+Henicorhina leucosticta,Henicorhina leucosticta,Passeriformes,NA,NA,NA,2,NA,NA,NA,NA
+Coccothraustes vespertinus,Hesperiphona vespertina,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Himantopus mexicanus,Himantopus mexicanus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Himatione sanguinea,Himatione sanguinea,Passeriformes,NA,1,4,3,NA,NA,NA,NA
+Hirundo rustica,Hirundo rustica,Passeriformes,15,2,7,NA,3,NA,NA,NA
+Hyliota flavigaster,Hyliota flavigaster,Passeriformes,NA,NA,NA,2,NA,NA,NA,NA
+Ixobrychus cinnamomeus,Ixobrychus cinnamomeus,Pelecaniformes,NA,2,6,NA,NA,NA,NA,NA
+Ixobrychus eurhythmus,Ixobrychus eurhythmus,Pelecaniformes,NA,3,6,NA,NA,NA,NA,NA
+Jacana jacana,Jacana jacana,Charadriiformes,NA,NA,NA,4,NA,NA,NA,NA
+Jacana spinosa,Jacana spinosa,Charadriiformes,NA,NA,NA,4,2,12,NA,24
+Larus crassirostris,Larus crassirostris,Charadriiformes,NA,2,3,NA,NA,NA,NA,NA
+Larus dominicanus,Larus dominicanus,Charadriiformes,NA,NA,NA,3,NA,NA,NA,NA
+Leiothrix argentauris,Leiothrix argentauris,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Leiothrix lutea,Leiothrix lutea,Passeriformes,NA,3,5,NA,NA,NA,NA,NA
+Leptotila verreauxi,Leptotila verreauxi,Columbiformes,NA,1,3,2,NA,NA,NA,NA
+Phalacrocorax chalconotus,Leucocarbo chalconotus,Suliformes,NA,2,3,NA,NA,NA,NA,NA
+Leucosticte arctoa,Leucosticte arctoa,Passeriformes,NA,2,5,NA,1,NA,NA,NA
+Leucosticte brandti,Leucosticte brandti,Passeriformes,NA,3,5,NA,NA,NA,NA,NA
+Lophophorus lhuysii,Lophophorus lhuysii,Galliformes,NA,3,5,NA,NA,NA,NA,24
+Lophophorus sclateri,Lophophorus sclateri,Galliformes,NA,2,3,NA,NA,NA,NA,NA
+Lophura nycthemera,Lophura nycthemera,Galliformes,NA,NA,12,NA,NA,NA,NA,12
+Lophura swinhooi,Lophura swinhoii,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Loxia curvirostra,Loxia curvirostra,Passeriformes,8,3,6,NA,4,NA,12,NA
+Loxops caeruleirostris,Loxops caeruleirostris,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Loxops coccineus,Loxops coccineus,Passeriformes,NA,1,3,NA,NA,NA,NA,NA
+Macroagelaius imthurni,Macroagelaius imthurni,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Malurus melanocephalus,Malurus melanocephalus,Passeriformes,NA,2,5,NA,NA,NA,NA,NA
+Melopsittacus undulatus,Melopsittacus undulatus,Psittaciformes,NA,4,8,NA,NA,NA,NA,NA
+Mionectes oleagineus,Mionectes oleagineus,Passeriformes,NA,2,5,3,NA,NA,NA,NA
+Montifringilla adamsi,Montifringilla adamsi,Passeriformes,NA,NA,NA,4,NA,NA,NA,NA
+Montifringilla nivalis,Montifringilla nivalis,Passeriformes,NA,4,5,NA,2,NA,NA,NA
+Morus serrator,Morus serrator,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ninox novaeseelandiae,Ninox novaeseelandiae,Strigiformes,NA,2,3,NA,NA,24,NA,12
+Spizaetus alboniger,Nisaetus alboniger,Accipitriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Spizaetus nipalensis,Nisaetus nipalensis,Accipitriformes,NA,NA,2,1,NA,NA,NA,NA
+Notiomystis cincta,Notiomystis cincta,Passeriformes,NA,2,6,NA,2,NA,NA,NA
+Numida meleagris,Numida meleagris,Galliformes,NA,6,12,NA,1,NA,NA,NA
+Nyctibius grandis,Nyctibius grandis,Caprimulgiformes,NA,NA,NA,1,NA,NA,NA,NA
+Nyctibius griseus,Nyctibius griseus,Caprimulgiformes,NA,NA,NA,1,NA,NA,NA,NA
+Oedistoma iliolophum,Oedistoma iliolophum,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Oreomystis bairdi,Oreomystis bairdi,Passeriformes,NA,NA,NA,NA,2,NA,NA,NA
+Oreopsar bolivianus,Oreopsar bolivianus,Passeriformes,NA,NA,NA,3,NA,NA,NA,NA
+Oriolus chinensis,Oriolus chinensis,Passeriformes,NA,2,4,NA,NA,NA,NA,NA
+Parus venustulus,Pardaliparus venustulus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Paroreomyza montana,Paroreomyza montana,Passeriformes,NA,NA,NA,2,NA,36,NA,NA
+Parus major,Parus major,Passeriformes,15,5,18,NA,2,NA,12,NA
+Passer domesticus,Passer domesticus,Passeriformes,13,2,8,NA,4,NA,NA,12
+Passer montanus,Passer montanus,Passeriformes,4,2,7,NA,4,NA,NA,NA
+Pavo cristatus,Pavo cristatus,Galliformes,NA,3,8,NA,NA,NA,NA,NA
+Pavo muticus,Pavo muticus,Galliformes,NA,3,6,NA,NA,NA,NA,NA
+Pedionomus torquatus,Pedionomus torquatus,Charadriiformes,NA,2,5,NA,NA,NA,NA,12
+Pelecanus conspicillatus,Pelecanus conspicillatus,Pelecaniformes,NA,1,4,2,NA,NA,NA,NA
+Perdix dauurica,Perdix dauurica,Galliformes,NA,12,20,NA,NA,NA,NA,NA
+Perdix hodgsoniae,Perdix hodgsoniae,Galliformes,NA,6,12,NA,NA,NA,NA,NA
+Periparus ater,Periparus ater,Passeriformes,NA,5,13,NA,2,NA,NA,12
+Petroica boodang,Petroica boodang,Passeriformes,10,1,4,3,3,NA,NA,NA
+Petroica phoenicea,Petroica phoenicea,Passeriformes,9,3,4,NA,3,NA,NA,NA
+Phaethon Rubricauda,Phaethon rubricauda,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phasianus colchicus,Phasianus colchicus,Galliformes,NA,7,14,NA,NA,NA,NA,NA
+Phasianus versicolor,Phasianus versicolor,Galliformes,NA,6,15,NA,NA,NA,NA,NA
+Phodilus badius,Phodilus badius,Strigiformes,NA,2,5,NA,NA,NA,NA,NA
+Phoebastria immutabilis,Phoebastria immutabilis,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phoebastria nigripes,Phoebastria nigripes,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phoenicurus auroreus,Phoenicurus auroreus,Passeriformes,NA,3,6,NA,NA,NA,NA,NA
+Pica pica,Pica pica,Passeriformes,NA,2,8,NA,1,15,17,NA
+Pinicola enucleator,Pinicola enucleator,Passeriformes,9,3,4,NA,1,NA,NA,12
+Pitta nympha,Pitta nympha,Passeriformes,NA,4,6,NA,NA,NA,NA,NA
+Platalea leucorodia,Platalea leucorodia,Pelecaniformes,28,3,7,NA,NA,36,48,NA
+Platalea minor,Platalea minor,Pelecaniformes,9,4,6,NA,1,NA,NA,NA
+Pluvianellus socialis,Pluvianellus socialis,Charadriiformes,NA,NA,NA,2,NA,NA,NA,NA
+Podiceps cristatus,Podiceps cristatus,Podicipediformes,NA,1,7,NA,3,12,NA,24
+Podoces hendersoni,Podoces hendersoni,Passeriformes,NA,3,4,NA,NA,NA,NA,NA
+Poecile atricapillus,Poecile atricapillus,Passeriformes,12,6,8,NA,1,NA,NA,12
+Poecile palustris,Poecile palustris,Passeriformes,11,5,10,NA,2,NA,NA,12
+Polyplectron bicalcaratum,Polyplectron bicalcaratum,Galliformes,NA,2,5,NA,NA,NA,NA,NA
+Polyplectron germaini,Polyplectron germaini,Galliformes,NA,1,2,NA,NA,NA,NA,NA
+Porphyrio hochstetteri,Porphyrio hochstetteri,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Porphyrio porphyrio,Porphyrio porphyrio,Gruiformes,NA,2,7,NA,2,12,24,NA
+Primolius couloni,Primolius couloni,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Procellaria cinerea,Procellaria cinerea,Procellariiformes,NA,NA,NA,1,NA,NA,NA,NA
+Pseudoleistes guirahuro,Pseudoleistes guirahuro,Passeriformes,NA,3,6,NA,NA,NA,NA,NA
+Pseudoleistes virescens,Pseudoleistes virescens,Passeriformes,NA,3,6,NA,NA,NA,NA,NA
+Pseudonestor xanthophrys,Pseudonestor xanthophrys,Passeriformes,NA,1,2,NA,NA,NA,NA,NA
+Pseudopodoces humilis,Pseudopodoces humilis,Passeriformes,NA,4,9,NA,NA,NA,NA,NA
+Aratinga brevipes,Psittacara brevipes,Psittaciformes,NA,NA,NA,NA,NA,NA,NA,NA
+Pycnonotus sinensis,Pycnonotus sinensis,Passeriformes,NA,3,5,NA,3.5,NA,NA,NA
+Pycnonotus taivanus,Pycnonotus taivanus,Passeriformes,NA,3,4,NA,2,NA,NA,NA
+Pygoscelis adeliae,Pygoscelis adeliae,Sphenisciformes,NA,NA,NA,2,1,36,96,NA
+Pygoscelis antarcticus,Pygoscelis antarcticus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pyrgilauda blanfordi,Pyrgilauda blanfordi,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Pyrgilauda davidiana,Pyrgilauda davidiana,Passeriformes,NA,5,6,NA,NA,NA,NA,NA
+Pyrrhocorax graculus,Pyrrhocorax graculus,Passeriformes,NA,NA,6,4,1,24,36,NA
+Pyrrhocorax pyrrhocorax,Pyrrhocorax pyrrhocorax,Passeriformes,NA,NA,6,4,2,NA,NA,NA
+Pyrrhula pyrrhula,Pyrrhula pyrrhula,Passeriformes,NA,4,6,NA,3,NA,NA,12
+Quiscalus quiscula,Quiscalus quiscula,Passeriformes,NA,4,7,NA,1,NA,NA,NA
+Rallina eurizonoides,Rallina eurizonoides,Gruiformes,NA,4,8,NA,NA,NA,NA,NA
+Regulus regulus,Regulus regulus,Passeriformes,NA,6,13,NA,2,NA,NA,NA
+Aceros corrugatus,Rhabdotorrhinus corrugatus,Bucerotiformes,NA,2,4,NA,1,NA,NA,NA
+Aceros waldeni,Rhabdotorrhinus waldeni,Bucerotiformes,NA,2,3,NA,NA,NA,NA,NA
+Rhea americana,Rhea americana,Rheiformes,NA,NA,NA,NA,NA,24,36,NA
+Pterocnemia pennata,Rhea pennata,Rheiformes,NA,NA,NA,NA,NA,36,NA,NA
+Rhynchopsitta terrisi,Rhynchopsitta terrisi,Psittaciformes,NA,NA,NA,NA,NA,NA,NA,NA
+Rhynchortyx cinctus,Rhynchortyx cinctus,Galliformes,NA,NA,NA,NA,NA,NA,NA,NA
+Rhynochetos jubatus,Rhynochetos jubatus,Eurypygiformes,31,NA,NA,1,NA,NA,NA,24
+Rynchops niger,Rynchops niger,Charadriiformes,20,2,4,NA,NA,12,36,NA
+Sagittarius serpentarius,Sagittarius serpentarius,Accipitriformes,NA,1,4,2,1,NA,NA,NA
+Sasia ochracea,Sasia ochracea,Piciformes,NA,2,4,NA,NA,NA,NA,NA
+Saxicola rubicola,Saxicola rubicola,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Scolopax rusticola,Scolopax rusticola,Charadriiformes,NA,2,6,4,2,NA,NA,NA
+Scytalopus magellanicus,Scytalopus magellanicus,Passeriformes,NA,2,4,NA,NA,NA,NA,NA
+Smithornis sharpei,Smithornis sharpei,Passeriformes,NA,1,2,2,NA,NA,NA,NA
+Spheniscus demersus,Spheniscus demersus,Sphenisciformes,27,1,2,2,2,24,96,48
+Spilornis cheela,Spilornis cheela,Accipitriformes,NA,NA,NA,1,2,NA,NA,NA
+Carduelis pinus,Spinus pinus,Passeriformes,9,1,6,NA,2,NA,NA,12
+Carduelis spinus,Spinus spinus,Passeriformes,NA,3,5,NA,2,NA,NA,12
+Stercorarius maccormicki,Stercorarius maccormicki,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Catharacta skua,Stercorarius skua,Charadriiformes,NA,1,2,2,NA,60,144,NA
+Sula dactylatra,Sula dactylatra,Suliformes,23,NA,NA,2,NA,24,36,NA
+Sylvia atricapilla,Sylvia atricapilla,Passeriformes,15,2,7,NA,2,NA,NA,NA
+Sylvia crassirostris,Sylvia crassirostris,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Synthliboramphus antiquus,Synthliboramphus antiquus,Charadriiformes,NA,NA,NA,2,NA,24,48,NA
+Syrmaticus ellioti,Syrmaticus ellioti,Galliformes,NA,5,8,NA,NA,NA,NA,NA
+Syrmaticus humiae,Syrmaticus humiae,Galliformes,NA,3,12,NA,NA,NA,NA,NA
+Tachybaptus novaehollandiae,Tachybaptus novaehollandiae,Podicipediformes,NA,4,5,NA,3,NA,NA,NA
+Tachycineta albilinea,Tachycineta albilinea,Passeriformes,NA,3,5,NA,2,NA,NA,NA
+Tachycineta albiventer,Tachycineta albiventer,Passeriformes,NA,3,6,NA,NA,NA,NA,NA
+Tachycineta cyaneoviridis,Tachycineta cyaneoviridis,Passeriformes,NA,2,4,3,1,NA,NA,NA
+Tachycineta euchrysea,Tachycineta euchrysea,Passeriformes,NA,NA,NA,3,NA,NA,NA,NA
+Tachycineta meyeni,Tachycineta leucopyga,Passeriformes,NA,3,6,NA,3,NA,NA,NA
+Tachycineta leucorrhoa,Tachycineta leucorrhoa,Passeriformes,NA,4,7,NA,NA,NA,NA,NA
+Taeniopygia guttata,Taeniopygia guttata,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Luscinia cyanura,Tarsiger cyanurus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tetraophasis obscurus,Tetraophasis obscurus,Galliformes,NA,NA,NA,NA,NA,NA,NA,NA
+Tetraophasis szechenyii,Tetraophasis szechenyii,Galliformes,NA,NA,NA,NA,1,NA,NA,NA
+Bonasa bonasia,Tetrastes bonasia,Galliformes,7,5,14,NA,1,NA,NA,12
+Tetrastes sewerzowi,Tetrastes sewerzowi,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Diomedea chrysostoma,Thalassarche chrysostoma,Procellariiformes,44,NA,NA,1,NA,96,168,NA
+Diomedea melanohprys,Thalassarche melanophris,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sterna eurygnatha,Thalasseus acuflavidus,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Thamnophilus nigrocinereus,Thamnophilus nigrocinereus,Passeriformes,NA,NA,NA,2,NA,NA,NA,NA
+Thraupis episcopus,Thraupis episcopus,Passeriformes,NA,1,3,2,NA,NA,NA,NA
+Tragopan caboti,Tragopan caboti,Galliformes,NA,2,6,NA,NA,NA,NA,NA
+Tragopan temminckii,Tragopan temminckii,Galliformes,NA,3,5,NA,NA,NA,NA,NA
+Tregellasia leucops,Tregellasia leucops,Passeriformes,9,NA,NA,2,NA,NA,NA,NA
+Turdus hortulorum,Turdus hortulorum,Passeriformes,NA,3,5,NA,2,NA,NA,NA
+Turdus naumanni,Turdus naumanni,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Turtur tympanistria,Turtur tympanistria,Columbiformes,7,1,2,2,NA,NA,NA,NA
+Tyto alba,Tyto alba,Strigiformes,NA,2,16,NA,2,NA,NA,12
+Urocissa erythrorhyncha,Urocissa erythrorhyncha,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Vanellus cinereus,Vanellus cinereus,Charadriiformes,NA,NA,NA,4,NA,NA,NA,NA
+Vanellus vanellus,Vanellus vanellus,Charadriiformes,18,2,4,4,NA,NA,NA,12
+Vidua chalybeata,Vidua chalybeata,Passeriformes,10,1,4,3,8,NA,NA,12
+Vireo olivaceus,Vireo olivaceus,Passeriformes,NA,1,5,NA,2,NA,NA,NA
+Zenaida auriculata,Zenaida auriculata,Columbiformes,NA,1,3,2,NA,NA,NA,NA
+Acanthisitta chloris,Acanthisitta chloris,Passeriformes,6,2,5,NA,2,NA,NA,9
+Acrocephalus scirpaceus,Acrocephalus scirpaceus,Passeriformes,NA,3,5,4,NA,NA,NA,NA
+Aegithalos glaucogularis,Aegithalos glaucogularis,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Aegotheles cristatus,Aegotheles cristatus,Caprimulgiformes,NA,2,5,NA,1,NA,NA,NA
+Agelaius phoeniceus,Agelaius phoeniceus,Passeriformes,NA,2,5,NA,NA,NA,NA,NA
+Alectoris chukar,Alectoris chukar,Galliformes,NA,6,19,NA,2,NA,NA,NA
+Alectura lathami,Alectura lathami,Galliformes,NA,NA,NA,NA,NA,NA,NA,NA
+Anas acuta,Anas acuta,Anseriformes,15,2,14,NA,1,NA,24,12
+Anas crecca,Anas crecca,Anseriformes,25,5,16,NA,1,NA,NA,12
+Anas falcata,Anas falcata,Anseriformes,NA,6,10,NA,NA,NA,NA,12
+Anas formosa,Anas formosa,Anseriformes,NA,4,10,NA,NA,NA,NA,2
+Anomalopteryx didiformis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Anser albifrons,Anser albifrons,Anseriformes,46,3,6,NA,NA,NA,NA,36
+Anser anser,Anser anser,Anseriformes,26,3,12,NA,NA,24,NA,36
+Anseranas semipalmata,Anseranas semipalmata,Anseriformes,26,1,16,NA,NA,36,48,24
+Anthropoides virgo,NA,Gruiformes,NA,NA,NA,2,NA,NA,NA,24
+Apus apus,Apus apus,Apodiformes,NA,NA,NA,NA,NA,NA,NA,NA
+Aquila chrysaetos,Aquila chrysaetos,Accipitriformes,50,1,3,2,NA,NA,NA,NA
+Aratinga pertinax,NA,Psittaciformes,NA,2,7,NA,NA,NA,NA,NA
+Arborophila rufipectus,Arborophila rufipectus,Galliformes,NA,3,7,NA,NA,NA,NA,NA
+Aythya fuligula,Aythya fuligula,Anseriformes,17,8,14,NA,1,12,NA,24
+Bonasa sewerzowi,NA,Galliformes,NA,5,8,NA,NA,NA,NA,12
+Botaurus stellaris,Botaurus stellaris,Pelecaniformes,9,1,7,NA,1,NA,NA,12
+Branta canadensis,Branta canadensis,Anseriformes,24,1,8,NA,NA,4,108,36
+Bubulcus ibis,Bubulcus ibis,Pelecaniformes,NA,1,9,NA,NA,10,12,NA
+Bucorvus leadbeateri,Bucorvus leadbeateri,Bucerotiformes,NA,1,3,2,NA,NA,NA,NA
+Burhinus grallarius,Burhinus grallarius,Charadriiformes,NA,NA,NA,2,NA,NA,NA,NA
+Bycanistes brevis,Bycanistes brevis,Bucerotiformes,NA,1,2,NA,NA,NA,NA,NA
+Calyptorhynchus lathami,Calyptorhynchus lathami,Psittaciformes,NA,1,2,NA,NA,NA,NA,NA
+Caprimulgus indicus,Caprimulgus indicus,Caprimulgiformes,NA,1,2,NA,NA,NA,NA,NA
+Carduelis psaltria,NA,Passeriformes,5,2,5,NA,1,NA,NA,NA
+Carpodacus erythrinus,Carpodacus erythrinus,Passeriformes,9,4,6,NA,NA,NA,NA,12
+Ceryle rudis,Ceryle rudis,Coraciiformes,NA,1,7,NA,NA,NA,NA,12
+Charadrius vociferus,NA,Charadriiformes,6,3,5,4,2,NA,NA,12
+Chrysolampis mosquitus,NA,Apodiformes,NA,NA,NA,2,NA,NA,NA,24
+Chrysolophus pictus,Chrysolophus pictus,Galliformes,NA,5,12,NA,NA,NA,NA,NA
+Ciconia nigra,NA,Ciconiiformes,31,2,6,NA,NA,NA,36,NA
+Corvus corone,NA,Passeriformes,NA,NA,NA,4,1,15,17,NA
+Coturnicops exquisitus,NA,Gruiformes,NA,NA,NA,NA,NA,NA,NA,NA
+Cursorius temminckii,NA,Charadriiformes,NA,NA,NA,2,NA,NA,NA,NA
+Cyanoptila cyanomelana,NA,Passeriformes,NA,4,6,NA,NA,NA,NA,NA
+Cygnus cygnus,NA,Anseriformes,25,2,12,NA,1,NA,84,48
+Dendrocygna javanica,NA,Anseriformes,NA,7,17,10,2,NA,NA,12
+Dives dives,NA,Passeriformes,NA,3,4,NA,NA,NA,NA,NA
+Dromaius novaehollandiae,NA,Casuariiformes,10,5,24,NA,NA,24,36,NA
+Egretta garzetta,NA,Pelecaniformes,NA,1,7,NA,1,NA,NA,12
+Egretta intermedia,Ardea intermedia,Pelecaniformes,NA,2,6,NA,NA,NA,NA,NA
+Egretta novaehollandiae,NA,Pelecaniformes,NA,2,7,NA,2,NA,NA,NA
+Emberiza cioides,NA,Passeriformes,NA,3,6,4,3,NA,NA,NA
+Emberiza spodocephala,NA,Passeriformes,NA,4,5,NA,2,NA,NA,NA
+Emeus crassus,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Eudynamys taitensis,NA,Cuculiformes,NA,NA,NA,NA,NA,NA,NA,NA
+Eudyptes chrysocome,NA,Sphenisciformes,NA,NA,NA,2,NA,NA,NA,NA
+Eurystomus orientalis,NA,Coraciiformes,NA,3,5,NA,NA,NA,NA,NA
+Falco columbarius,NA,Falconiformes,10,3,6,NA,NA,NA,NA,12
+Falco sparverius,NA,Falconiformes,9,4,6,NA,2,NA,NA,12
+Falco tinnunculus,NA,Falconiformes,16,1,7,NA,NA,NA,NA,12
+Francolinus pintadeanus,NA,Galliformes,NA,3,8,NA,NA,NA,NA,NA
+Fringilla montifringilla,NA,Passeriformes,14,5,7,NA,2,NA,NA,12
+Gallus lafayetii,NA,Galliformes,NA,2,4,2,NA,NA,NA,NA
+Gallus sonneratii,NA,Galliformes,NA,2,5,NA,NA,NA,NA,NA
+Gallus varius,NA,Galliformes,NA,3,12,8,NA,NA,NA,NA
+Garrulus glandarius,NA,Passeriformes,NA,3,10,NA,NA,12,NA,24
+Geotrygon violacea,NA,Columbiformes,NA,NA,NA,2,NA,NA,NA,NA
+Gnorimopsar chopi,NA,Passeriformes,NA,3,5,NA,NA,NA,NA,NA
+Gracula religiosa,NA,Passeriformes,NA,2,3,NA,3,NA,NA,NA
+Gracupica nigricollis,NA,Passeriformes,NA,3,5,NA,NA,NA,NA,NA
+Grus americana,NA,Gruiformes,40,NA,NA,2,NA,24,NA,48
+Grus canadensis,NA,Gruiformes,NA,NA,NA,2,NA,24,36,NA
+Grus grus,NA,Gruiformes,NA,NA,NA,2,NA,48,72,NA
+Grus japonensis,NA,Gruiformes,NA,NA,NA,2,NA,36,48,NA
+Grus leucogeranus,NA,Gruiformes,NA,NA,NA,2,NA,NA,NA,36
+Grus vipio,NA,Gruiformes,NA,NA,NA,2,NA,24,36,NA
+Heliornis fulica,NA,Gruiformes,NA,2,4,2,NA,NA,NA,NA
+Hemiphaga novaeseelandiae,NA,Columbiformes,NA,NA,NA,1,NA,NA,NA,NA
+Icterus mesomelas,NA,Passeriformes,NA,NA,NA,3,NA,NA,NA,NA
+Ithaginis cruentus,NA,Galliformes,NA,2,7,NA,NA,NA,NA,NA
+Ixobrychus flavicollis,NA,Pelecaniformes,NA,2,6,4,2,NA,NA,NA
+Ixobrychus sinensis,NA,Pelecaniformes,NA,3,7,NA,3,NA,NA,NA
+Lampropsar tanagrinus,NA,Passeriformes,NA,NA,NA,3,NA,NA,NA,NA
+Lanius tephronotus,NA,Passeriformes,NA,4,6,NA,2,NA,NA,NA
+Larus relictus,NA,Charadriiformes,NA,2,3,NA,NA,NA,NA,36
+Larus ridibundus,NA,Charadriiformes,32,1,3,NA,NA,24,NA,NA
+Larus saundersi,NA,Charadriiformes,NA,1,6,3,NA,NA,NA,NA
+Lewinia muelleri,NA,Gruiformes,NA,NA,NA,2,NA,NA,NA,NA
+Lophura ignita,NA,Galliformes,NA,4,8,NA,NA,NA,NA,NA
+Luscinia calliope,NA,Passeriformes,NA,3,6,NA,1,NA,NA,NA
+Melamprosops phaeosoma,NA,Passeriformes,NA,1,2,NA,NA,NA,NA,NA
+Meleagris gallopavo,NA,Galliformes,NA,8,20,NA,1,12,24,NA
+Menura novaehollandiae,NA,Passeriformes,26,NA,NA,1,NA,60,96,NA
+Micrastur gilvicollis,NA,Falconiformes,NA,NA,NA,NA,NA,NA,NA,NA
+Molothrus aeneus,NA,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Neophema chrysogaster,NA,Psittaciformes,NA,3,6,NA,NA,NA,NA,NA
+Nesopsar nigerrimus,NA,Passeriformes,NA,NA,NA,2,NA,NA,NA,NA
+Netta rufina,NA,Anseriformes,7,6,14,NA,1,NA,24,12
+Nipponia nippon,NA,Pelecaniformes,36,1,5,3,1,24,48,36
+Nucifraga columbiana,NA,Passeriformes,17,2,6,NA,NA,NA,NA,24
+Nycticorax nycticorax,NA,Pelecaniformes,16,1,8,NA,1,12,36,NA
+Nycticryphes semicollaris,NA,Charadriiformes,NA,2,3,2,NA,NA,NA,NA
+Nymphicus hollandicus,NA,Psittaciformes,NA,1,7,4,NA,NA,NA,NA
+Otis tarda,NA,Otidiformes,NA,1,4,NA,NA,24,72,NA
+Pandion haliaetus,NA,Accipitriformes,25,1,4,3,1,NA,NA,36
+Paradoxornis webbianus,NA,Passeriformes,NA,3,7,NA,2,NA,NA,NA
+Pelagodroma marina,NA,Procellariiformes,21,NA,NA,1,NA,NA,NA,36
+Penelopides panini,NA,Bucerotiformes,NA,2,3,NA,NA,NA,NA,NA
+Pericrocotus ethologus,NA,Passeriformes,NA,3,4,NA,NA,NA,NA,NA
+Petroica goodenovii,NA,Passeriformes,5,1,4,NA,4,NA,NA,NA
+Phaethon rubricauda,NA,Phaethontiformes,9,NA,NA,1,NA,NA,NA,NA
+Phoenicopterus ruber,NA,Phoenicopteriformes,44,1,2,NA,NA,36,72,NA
+Phylloscopus inornatus,NA,Passeriformes,NA,2,7,NA,1,NA,NA,12
+Picathartes gymnocephalus,NA,Passeriformes,NA,NA,NA,2,NA,NA,NA,NA
+Progne chalybea,NA,Passeriformes,NA,2,5,NA,NA,NA,NA,NA
+Pterocles namaqua,NA,Pteroclidiformes,NA,NA,NA,3,NA,NA,NA,NA
+Pteroglossus azara,NA,Piciformes,NA,2,4,NA,NA,NA,NA,NA
+Ptilopachus petrosus,NA,Galliformes,NA,4,6,NA,NA,NA,NA,NA
+Pucrasia macrolopha,NA,Galliformes,NA,NA,NA,NA,NA,NA,NA,NA
+Pycnonotus melanicterus,NA,Passeriformes,NA,2,3,NA,2,NA,NA,NA
+Remiz consobrinus,NA,Passeriformes,NA,5,10,NA,NA,NA,NA,NA
+Rissa tridactyla,NA,Charadriiformes,NA,1,3,2,NA,NA,NA,48
+Saxicola torquatus,Saxicola torquatus,Passeriformes,6,2,7,NA,4,NA,NA,12
+Serinus canaria,NA,Passeriformes,NA,3,4,NA,3,NA,NA,NA
+Serinus serinus,NA,Passeriformes,NA,3,4,NA,2,NA,NA,12
+Sitta carolinensis,NA,Passeriformes,NA,3,10,NA,1,NA,NA,NA
+Streptopelia chinensis,NA,Columbiformes,NA,NA,3,2,NA,NA,NA,NA
+Strigops habroptilus,NA,Psittaciformes,NA,1,3,NA,NA,NA,132,NA
+Struthio camelus,NA,Struthioniformes,NA,2,11,NA,NA,36,48,NA
+Sylvia hortensis,NA,Passeriformes,14,3,6,NA,1,NA,NA,NA
+Sylviparus modestus,NA,Passeriformes,NA,4,6,NA,NA,NA,NA,NA
+Syrmaticus reevesii,NA,Galliformes,NA,6,15,NA,NA,NA,NA,NA
+Tachycineta bicolor,NA,Passeriformes,12,2,8,NA,1,NA,NA,NA
+Tachycineta stolzmanni,NA,Passeriformes,NA,NA,NA,NA,NA,NA,NA,NA
+Tachycineta thalassina,NA,Passeriformes,NA,2,7,NA,1,NA,NA,NA
+Tadorna ferruginea,NA,Anseriformes,NA,6,16,NA,NA,NA,NA,24
+Tetrao tetrix,NA,Galliformes,5,6,11,8,NA,NA,NA,12
+Tetraogallus tibetanus,NA,Galliformes,NA,4,7,NA,NA,NA,NA,NA
+Threskiornis aethiopicus,NA,Pelecaniformes,21,2,5,NA,NA,NA,NA,NA
+Todiramphus sanctus,Todiramphus sanctus,Coraciiformes,8,3,7,NA,2,NA,NA,NA
+Trogon viridis,NA,Trogoniformes,NA,2,3,NA,NA,NA,NA,NA
+Turdus migratorius,NA,Passeriformes,13,2,4,NA,3,NA,NA,12
+Turdus rubrocanus,NA,Passeriformes,NA,2,4,NA,NA,NA,NA,NA
+Turnix sylvatica,NA,Charadriiformes,9,2,7,4,NA,1.22,NA,48
+Xanthopsar flavus,NA,Passeriformes,NA,3,5,4,1,NA,NA,NA
