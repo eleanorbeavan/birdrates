@@ -9,9 +9,9 @@ library(car)
 library(cowplot)
 
 # read in data
-calibration.2 = read.csv("/path/to/ages_cal2_order.csv", stringsAsFactors = F)
-calibration.4 = read.csv("/path/to/ages_cal4_order.csv", stringsAsFactors = F)
-no.calibration = read.csv("/path/to/ages_nocal_order.csv", stringsAsFactors = F)
+calibration.2 = read.csv("name/of/output/from/get_node_ages.R", stringsAsFactors = F)
+calibration.4 = read.csv("name/of/output/from/get_node_ages.R", stringsAsFactors = F)
+no.calibration = read.csv("name/of/output/from/get_node_ages.R", stringsAsFactors = F)
 
 t2 = read.tree("/path/to/calibration_sets_2.tre")
 t4 = read.tree("~/path/to/calibration_sets_4.tre")
