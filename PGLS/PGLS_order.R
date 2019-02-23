@@ -9,13 +9,13 @@ library(car)
 library(cowplot)
 
 # read in data
-calibration.2 = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/ages_cal2_order.csv", stringsAsFactors = F)
-calibration.4 = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/ages_cal4_order.csv", stringsAsFactors = F)
-no.calibration = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/ages_nocal_order.csv", stringsAsFactors = F)
+calibration.2 = read.csv("/path/to/ages_cal2_order.csv", stringsAsFactors = F)
+calibration.4 = read.csv("/path/to/ages_cal4_order.csv", stringsAsFactors = F)
+no.calibration = read.csv("/path/to/ages_nocal_order.csv", stringsAsFactors = F)
 
-t2 = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_2.tre")
-t4 = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_4.tre")
-t = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/no_calibration.tre")
+t2 = read.tree("/path/to/calibration_sets_2.tre")
+t4 = read.tree("/path/to/calibration_sets_4.tre")
+t = read.tree("/path/to/no_calibration.tre")
 
 # divide dS and dN by node age
 abs.ds.2 = calibration.2$ds/calibration.2$mrca.age
@@ -42,39 +42,28 @@ pgls.data.sorted = pgls.data.sorted[match(tree2$tip.label, calibration.2$Tips),]
 pgls1 = comparative.data(tree2, pgls.data.sorted, Tips, vcv= T, vcv.dim = 3)
 model1 = pgls(log(abs.ds.2) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity), pgls1, lambda = 'ML', kappa = 0.996, delta = 0.998)
 summary(model1)
-sum(resid(model1)^2)
-### longevity significant
 
-### include order as a factor and compare AIC scores?
+### include order as a factor and compare AIC scores
 model2 = pgls(log(abs.ds.2) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity)+order, pgls1, lambda = 'ML', kappa = 1.005, delta = 1.500)
 summary(model2)
 
 AIC(model1, model2)
 
-# just bird order
-model3 = pgls(log(abs.ds.2) ~ order, pgls1, lambda = 'ML', kappa = 0.995, delta = 1.500)
-summary(model3)
-sum(resid(model3)^2)
-
 # dS pgls model calibration set 4
 model1 = pgls(log(abs.ds.4) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity), pgls1, lambda = 'ML', kappa = 0.728, delta = 0.806)
 summary(model1)
-sum(resid(model1)^2)
 
-### include order as a factor and compare AIC scores?
+### include order as a factor and compare AIC scores
 model2 = pgls(log(abs.ds.4) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity)+order, pgls1, lambda = 'ML', kappa = 1.055, delta = 1.220)
 summary(model2)
 
 AIC(model1, model2)
 
-
 # dS pgls model no calibration set 
 model1 = pgls(log(abs.ds.no) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity), pgls1, lambda = 'ML', kappa = 1.005, delta = 1.003)
 summary(model1)
-sum(resid(model1)^2)
-# longevity significant
 
-### include order as a factor and compare AIC scores?
+### include order as a factor and compare AIC scores
 model2 = pgls(log(abs.ds.no) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity)+order, pgls1, lambda = 'ML', kappa = 0.993, delta = 1.500)
 summary(model2)
 
@@ -82,9 +71,11 @@ AIC(model1, model2)
 
 
 ## dnds
+# omega pgls model no calibration set 
 model1 = pgls(log(dnds) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity), pgls1, lambda = 'ML', kappa = 0.805, delta = 1.102)
 summary(model1)
 
+### include order as a factor and compare AIC scores
 model2 = pgls(log(dnds) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity)+order, pgls1, lambda = 0.0001, kappa = 'ML', delta = 1.584)
 summary(model2)
 
@@ -95,68 +86,35 @@ AIC(model1, model2)
 ## it doesnt work if dn is 0 because you can't do log 0
 pgls.data.sorted = pgls.data.sorted %>% filter(abs.dn.2 > 0)
 pgls1 = comparative.data(tree2, pgls.data.sorted, Tips, vcv= T, vcv.dim = 3)
+# dN pgls model calibration set 2
 model1 = pgls(log(abs.dn.2) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity), pgls1, lambda = 0.447, kappa = 'ML', delta = 0.902)
 summary(model1)
-sum(resid(model1)^2)
-### age at first breeding significant
 
-### include order as a factor and compare AIC scores?
+### include order as a factor and compare AIC scores
 model2 = pgls(log(abs.dn.2) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity)+order, pgls1, lambda = 'ML', kappa = 0.898, delta = 1.252)
 summary(model2)
 
 AIC(model1, model2)
 
-### CALSET 4
+### dN pgls model calibration set 4
 model1 = pgls(log(abs.dn.4) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity), pgls1, lambda = 'ML', kappa = 0.528, delta = 0.656)
 summary(model1)
-sum(resid(model1)^2)
-# age at first breeding significant
 
-### include order as a factor and compare AIC scores?
+### include order as a factor and compare AIC scores
 model2 = pgls(log(abs.dn.4) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity)+order, pgls1, lambda = 'ML', kappa = 0.898, delta = 1.252)
 summary(model2)
 
 AIC(model1, model2)
 
-## NO CAL
+## dN pgls model no calibration set 
 model1 = pgls(log(abs.dn.no) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity), pgls1, lambda = 0.0001, kappa = 0.878, delta = 1.291)
 summary(model1)
-sum(resid(model1)^2)
-# age at first breeding significant
 
-### include order as a factor and compare AIC scores?
+### include order as a factor and compare AIC scores
 model2 = pgls(log(abs.dn.no) ~ log(body_mass)+log(max_longevity)+log(age_first_breeding)+log(fecundity)+order, pgls1, lambda = 'ML', kappa = 0.875, delta = 1.240)
 summary(model2)
 
 AIC(model1, model2)
-
-### VISUALISE BIRD ORDER DATA
-df = pgls.data.sorted %>% arrange(order) %>% group_by(order) %>% mutate(median_ds.2 = median(abs.ds.2), median_dn.2 = median(abs.dn.2), median_ds.4 = median(abs.ds.4), median_dn.4 = median(abs.dn.4), median_ds.no = median(abs.ds.no), median_dn.no = median(abs.dn.no),  median_dnds = median(dnds))
-df = df[,c(2,14:20)]
-df = unique(df)
-df$value = 'median'
-colnames(df)[2] = 'abs.ds.2'
-colnames(df)[3] = 'abs.dn.2'
-colnames(df)[4] = 'abs.ds.4'
-colnames(df)[5] = 'abs.dn.4'
-colnames(df)[6] = 'abs.ds.no'
-colnames(df)[7] = 'abs.dn.no'
-colnames(df)[8] = 'dnds'
-df = df %>% ungroup()
-pgls.data.sorted$value = 'other'
-pgls.data.sorted = pgls.data.sorted[,c(2,7:14)]
-pgls.data.sorted = rbind(pgls.data.sorted, df)
-
-p1 = ggplot(pgls.data.sorted, aes(reorder(order, -abs.ds.2), log(abs.ds.2), colour = value)) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("order") + ylab("log dS (calibration set 2)") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-p2 = ggplot(pgls.data.sorted, aes(reorder(order, -abs.dn.2), log(abs.dn.2), colour = value)) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("order") + ylab("log dN (calibration set 2)") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-p3 = ggplot(pgls.data.sorted, aes(reorder(order, -abs.ds.4), log(abs.ds.4), colour = value)) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("order") + ylab("log dS (calibration set 4)") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-p4 = ggplot(pgls.data.sorted, aes(reorder(order, -abs.dn.4), log(abs.dn.4), colour = value)) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("order") + ylab("log dN (calibration set 4)") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-p5 = ggplot(pgls.data.sorted, aes(reorder(order, -abs.ds.no), log(abs.ds.no), colour = value)) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("order") + ylab("log dS (root set to 100)") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-p6 = ggplot(pgls.data.sorted, aes(reorder(order, -abs.dn.no), log(abs.dn.no), colour = value)) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("order") + ylab("log dN (root set to 100)") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-p7 = ggplot(pgls.data.sorted, aes(reorder(order, dnds), log(dnds), colour = value)) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("order") + ylab("log omega") + theme_minimal() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-
-plot_grid(p1,p2,p3, rows = 1)
-plot_grid(p4,p5,p6, rows = 1)
 
 
 
@@ -301,7 +259,6 @@ summary(model1)
 ggplot(orders[[9]], aes(log(body_mass), log(abs.ds))) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("log mass") + ylab("log dS (calibration set 2)") + theme_minimal()
 
 #Passeriformes
-# can do full model because there is enough data
 pgls1 = comparative.data(tree2, orders[[10]], Tips, vcv= T, vcv.dim = 3)
 model1 = pgls(log(abs.ds) ~ log(body_mass), pgls1, lambda = 0.546, kappa = 0.0001, delta = 'ML')
 summary(model1)
@@ -827,6 +784,3 @@ model1 = pgls(log(dn.ds) ~ log(fecundity), pgls1, lambda = 0.0001, kappa = 1, de
 summary(model1)
 
 ggplot(orders[[10]], aes(log(fecundity), log(abs.ds))) + geom_point() + geom_smooth(method = "lm", se = F, aes(linetype = order)) + xlab("log fecundity") + ylab("log dS (calibration set 2)") + theme_minimal()
-
-
-
