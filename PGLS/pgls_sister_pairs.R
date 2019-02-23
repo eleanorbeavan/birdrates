@@ -64,7 +64,7 @@ tree2 = drop.tip(t2, tips.to.drop)
 # rows in dataframe need to be in the same order as tips in the tree
 pgls.data.sorted = pgls.data[match(tree2$tip.label, pgls.data$species),]
 
-# dS vs mass pgls model calibration set 2
+# dS vs trait pgls model calibration set 2
 pgls1 = comparative.data(tree2, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
 model1 = pgls(log(abs.ds.2) ~ log(trait), pgls1, lambda = , kappa = , delta = ) ## fill in values of k, l and d
 summary(model1)
@@ -83,7 +83,7 @@ plot(model1, which=c(1:6))
 # visualise the data
 ggplot(pgls.data, aes(log(trait), log(abs.ds.2))) + geom_point() + scale_x_continuous(limits = c(0, 15)) + scale_y_continuous(limits = c(-7.5, 0)) + geom_smooth(method = "lm", se = F) + xlab("log trait") + ylab("log dS (calibration set 2)") + theme_minimal()
 
-# dN vs mass pgls model calibration set 2
+# dN vs triat pgls model calibration set 2
 pgls1b = comparative.data(tree2, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
 model1b = pgls(log(abs.dn.2) ~ log(trait), pgls1b, lambda = , delta = , kappa = ) ## fill in values of k, l and d
 summary(model1b)
@@ -109,7 +109,7 @@ tree4 = drop.tip(t4, tips.to.drop)
 # rows in dataframe need to be in the same order as tips in the tree
 pgls.data.sorted = pgls.data[match(tree4$tip.label, pgls.data$species),]
 
-# dS vs mass pgls model calibration set 4
+# dS vs trait pgls model calibration set 4
 pgls2 = comparative.data(tree4, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
 model2 = pgls(log(abs.ds.4) ~ log(trait), pgls2, lambda = , kappa = , delta = )
 summary(model2)
@@ -127,7 +127,7 @@ plot(model2, which=c(1:6))
 # visualise the data
 ggplot(pgls.data, aes(log(trait), log(abs.ds.4))) + geom_point() + xlab("log trait") + ylab("log dS (calibration set 4)") + theme_minimal()
 
-# dN vs mass pgls model calibration set 4
+# dN vs trait pgls model calibration set 4
 pgls2b = comparative.data(tree4, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
 model2b = pgls(log(abs.dn.4) ~ log(trait), pgls2, lambda = , kappa = , delta = )
 summary(model2b)
@@ -153,7 +153,7 @@ tree = drop.tip(t, tips.to.drop)
 # rows in dataframe need to be in the same order as tips in the tree
 pgls.data.sorted = pgls.data[match(tree$tip.label, pgls.data$species),]
 
-# dS vs mass pgls model calibration set 4
+# dS vs trait pgls model calibration set 4
 pgls3 = comparative.data(tree, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
 model3 = pgls(log(abs.ds) ~ log(trait), pgls3, lambda = , kappa = , delta = )
 summary(model3)
@@ -172,7 +172,7 @@ plot(model3, which=c(1:6))
 # visualise the data
 ggplot(pgls.data, aes(log(trait), log(abs.ds))) + geom_point() + xlab("log trait") + ylab("log dS (no calibration)") + theme_minimal()
 
-# dN vs mass pgls model calibration set 4
+# dN vs trait pgls model calibration set 4
 pgls3b = comparative.data(tree, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
 model3b = pgls(log(abs.dn) ~ log(trait), pgls3b, lambda = , kappa = , delta = )
 summary(model3b)
@@ -191,7 +191,7 @@ plot(model3b, which=c(1:6))
 ggplot(pgls.data, aes(log(trait), log(abs.dn))) + geom_point() + xlab("log trait") + ylab("log dN (no calibration)") + theme_minimal()
 
 ## DN/DS
-# dN/dS vs mass pgls model 
+# dN/dS vs trait pgls model 
 pgls4 = comparative.data(tree2, pgls.data.sorted, species, vcv= T, vcv.dim = 3)
 model4 = pgls(log(dn.ds) ~ log(trait), pgls4, lambda = , kappa = , delta = )
 summary(model4)
