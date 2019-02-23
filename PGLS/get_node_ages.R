@@ -1,14 +1,15 @@
 # A function for getting the age node of a tree
 library(phytools)
 
-t = read.tree('~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_2_new.tre')
-t = read.tree('~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_4.tre')
-t = read.tree('~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/no_calibration.tre')
-data = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/all_traits_genera/genera_mass_rates.csv", stringsAsFactors = F)
-data = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/all_traits_genera/genera_gentime_rates.csv", stringsAsFactors = F)
-data = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/all_traits_genera/genera_fecundity_rates.csv", stringsAsFactors = F)
-data = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/all_traits_genera/genera_longevity_rates.csv", stringsAsFactors = F)
+t = read.tree('/path/to/calibration_sets_2.tre')
+t = read.tree('/path/to/calibration_sets_4.tre')
+t = read.tree('/path/to/no_calibration.tre')
+data = read.csv("/path/to//genera_mass_rates.csv", stringsAsFactors = F)
+data = read.csv("/path/to/genera_gentime_rates.csv", stringsAsFactors = F)
+data = read.csv("/path/to/genera_fecundity_rates.csv", stringsAsFactors = F)
+data = read.csv("/path/to/genera_longevity_rates.csv", stringsAsFactors = F)
 
+## NODE AGES FOR SISTER PAIRS
 # get all pairs out of data frame
 sister.pairs = list()
 for (i in 1:nrow(data)) {
@@ -28,16 +29,14 @@ for (i in 1:nrow(data)) {
 x = node.ages[,c(1,3)]
 y = merge(data, x, by = 'spp1', all.x = T)
 
-write.csv(y , file = '~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/ages_true_gnetime_cal2.csv')
+write.csv(y , file = 'choose/file/name')
 
-#### ORDER ANALYSIS
+#### NODE AGES FOR WHOLE TREE DATA
 ## for order data
 library(picante)
 library(dplyr)
 
-t = read.tree('~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_2.tre')
-t = read.tree('~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_4.tre')
-t = read.tree('~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/no_calibration.tre')
+data = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/rates_traits.csv", stringsAsFactors = F)
 
 # get node ages for terminal branch for each species in the tree
 phy.age = node.age(t)
@@ -48,7 +47,7 @@ ages = BL.positions[,5]+BL.positions[,4]
 BL.positions = cbind(BL.positions,ages)
 node.ages = as.data.frame(BL.positions)
 names(node.ages) = c("parental.node","daughter.node","dist.root","BL","dist.tip","mrca.age")
-## node.ages is a data frame listing as variables the identity of parental and daughter nodes, the distance from the root and from the present of each node, the branch lenght and the age of the most recent common ancestor
+## node.ages is a data frame listing as variables to identity of parental and daughter nodes, the distance from the root and from the present of each node, the branch lenght and the age of the most recent common ancestor
 species.ages = node.ages[node.ages[,2]<length(t$tip)+1,]
 
 names = as.data.frame(cbind(t$tip.label, seq(1, 475)))
@@ -57,8 +56,6 @@ colnames(names) = c('Tips', 'daughter.node')
 species.ages = merge(species.ages, names, by = 'daughter.node')
 species.ages = species.ages[,c(6,7)]
 
-data = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/rates_traits.csv", stringsAsFactors = F)
-
 data.ages = merge(data, species.ages, by = 'Tips', all.x = T)
 
-write.csv(data.ages, "~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/ages_cal2_order.csv")
+write.csv(data.ages, "choose/file/name")
