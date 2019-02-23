@@ -6,9 +6,9 @@ library(caper)
 library(ggplot2)
 
 # load in data
-calibration.2 = read.csv("path/to/calibration.2.data", stringsAsFactors = F)
-calibration.4 = read.csv("path/to/calibration.4.data", stringsAsFactors = F)
-no.calibration = read.csv("path/to/no.calibration.data", stringsAsFactors = F)
+calibration.2 = read.csv("name/of/output/from/get_node_ages.R", stringsAsFactors = F)
+calibration.4 = read.csv("name/of/output/from/get_node_ages.R", stringsAsFactors = F)
+no.calibration = read.csv("name/of/output/from/get_node_ages.R", stringsAsFactors = F)
 
 t2 = read.tree("path/to/calibration_sets_2.tre")
 t4 = read.tree("path/to/calibration_sets_4.tre")
