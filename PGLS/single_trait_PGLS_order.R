@@ -9,13 +9,13 @@ library(car)
 library(cowplot)
 
 # read in data
-calibration.2 = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/ages_cal2_order.csv", stringsAsFactors = F)
-calibration.4 = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/ages_cal4_order.csv", stringsAsFactors = F)
-no.calibration = read.csv("~/Dropbox/PhD/bird_rates/processed_data/CSV_files/order/ages_nocal_order.csv", stringsAsFactors = F)
+calibration.2 = read.csv("/path/to/ages_cal2_order.csv", stringsAsFactors = F)
+calibration.4 = read.csv("/path/to/ages_cal4_order.csv", stringsAsFactors = F)
+no.calibration = read.csv("/path/to/ages_nocal_order.csv", stringsAsFactors = F)
 
-t2 = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_2.tre")
-t4 = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/calibration_sets_4.tre")
-t = read.tree("~/Dropbox/PhD/bird_rates/processed_data/calibration_analysis/no_calibration.tre")
+t2 = read.tree("/path/to/calibration_sets_2.tre")
+t4 = read.tree("~/path/to/calibration_sets_4.tre")
+t = read.tree("/path/to/no_calibration.tre")
 
 # divide dS and dN by node age
 abs.ds.2 = calibration.2$ds/calibration.2$mrca.age
@@ -37,12 +37,6 @@ tree2 = drop.tip(t2, tips.to.drop)
 
 # rows in dataframe need to be in the same order as tips in the tree
 pgls.data.sorted = pgls.data.sorted[match(tree2$tip.label, calibration.2$Tips),]
-
-# how many species for each trait?
-x = calibration.2 %>% filter(!is.na(body_mass))
-x = calibration.2 %>% filter(!is.na(max_longevity))
-x = calibration.2 %>% filter(!is.na(age_first_breeding))
-x = calibration.2 %>% filter(!is.na(fecundity))
 
 # dS pgls model calibration set 2
 pgls1 = comparative.data(tree2, pgls.data.sorted, Tips, vcv= T, vcv.dim = 3)
